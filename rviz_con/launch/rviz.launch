@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="rviz_config" default="$(find rviz_con)/config/rviz_con.rviz" /> 
+  <arg name="prefix" default=""/>
+  <arg name="baseFrameId" default="base_footprint"/>
+  <arg name="mapFrameId" default="robot_map"/>
+  <arg name="pandaGroupName" default="panda_arm"/>
+  
+  
+  <node pkg="rviz" type="rviz" name="rviz_con" args="-d $(arg rviz_config)" output="screen">
+    <param name="prefix" value="$(arg prefix)" />
+    <param name="baseFrameId" value="$(arg baseFrameId)" />
+    <param name="mapFrameId" value="$(arg mapFrameId)" />
+    <param name="pandaGroupName" value="$(arg pandaGroupName)" />
+  </node>
+</launch>

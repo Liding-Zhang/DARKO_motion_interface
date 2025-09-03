@@ -1,0 +1,8 @@
+
+<library path="lib/librviz_con"> 
+    <class name="my_rviz_panel/CombinedControlPanel" type="my_rviz_panel::CombinedControlPanel" base_class_type="rviz::Panel">
+        <description>
+            A panel for controlling the arm joints and base coordinates of a robot.
+        </description>
+    </class>
+</library>
