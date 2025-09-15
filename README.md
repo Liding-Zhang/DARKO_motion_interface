@@ -43,8 +43,8 @@ If you started manually, you can save the state of the rviz instance to be launc
 Here, I listed some issues / ideas remaining to be sovled / implemented.
 
 ### Issues:
-- [ ] **Moving at the same time**: Currently, the "Publish All" button starts the base and manipulator planning in two seperate threads. But as the base is a lot faster in planning, it just starts to move before the manipulator moves.Joining the threads to one to move them together would be good. One could also adjust the movement speed of the base such that they finish simultaneously.
-- [ ] **"Failed" execution**: Even though the manipulators movement finishes, the execution somehow fails. This should be avoided to distinct real failures from normal executions.
+- [1] **Moving at the same time**: Currently, the "Publish All" button starts the base and manipulator planning in two seperate threads. But as the base is a lot faster in planning, it just starts to move before the manipulator moves.Joining the threads to one to move them together would be good. One could also adjust the movement speed of the base such that they finish simultaneously.
+- [2] **"Failed" execution**: Even though the manipulators movement finishes, the execution somehow fails. This should be avoided to distinct real failures from normal executions.
 
 ### Ideas:
 - [ ] **Robot-Independance**: Currently, the `rviz_con` package only allows for this specific combination of mobile manipulators, but it would be intersting to allow dynamic combinations, as it would open the door of combined planning for all mobile manipulators.
