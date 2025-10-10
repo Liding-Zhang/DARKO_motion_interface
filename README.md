@@ -4,7 +4,7 @@ More specifically, this repo also contains a custom catkin package (`rviz_con`),
 to be combined / executed simultaneously (!improvement needed!), using a Rviz Panel.
 
 ## Build instructions
-copy everything in `src` folder and run:
+Copy everything in the `src` folder and run:
 ```
 catkin build
 ```
