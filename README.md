@@ -1,14 +1,14 @@
 # Combined Rviz interface for mobile manipulators
 This repo contains packages to run a motion planning simulation for a darko base robot combined with a Franka Emika manipulator.
 More specifically, this repo also contains a custom catkin package (`rviz_con`), which allows the motion planning the two robots of a mobile manipulator 
-to be combined / executed simultaneously (!improvement needed!), using a Rviz Panel.
+to be combined/executed simultaneously (!improvement needed!), using a Rviz Panel.
 
 ## Build instructions
 Copy everything in the `src` folder and run:
 ```
 catkin build
 ```
-If you only want to build the `rviz_con` package seperately (e.g. after changing code in it), run:
+If you only want to build the `rviz_con` package separately (e.g., after changing code in it), run:
 ```
 catkin build rviz_con
 ```
