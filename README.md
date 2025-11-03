@@ -43,12 +43,12 @@ If you started manually, you can save the state of the RViz instance to be launc
 Here, I listed some issues/ideas remaining to be solved / implemented.
 
 ### Issues:
-- [1] **Moving at the same time**: Currently, the "Publish All" button starts the base and manipulator planning in two separate threads. But as the base is a lot faster in planning, it just starts to move before the manipulator moves.Joining the threads to one to move them together would be good. One could also adjust the movement speed of the base such that they finish simultaneously.
-- [2] **"Failed" execution**: Even though the manipulators movement finishes, the execution somehow fails. This should be avoided to distinct real failures from normal executions.
+- [1] **Moving at the same time**: Currently, the "Publish All" button starts the base and manipulator planning in two separate threads. But as the base is a lot faster in planning, it just starts to move before the manipulator moves. Joining the threads to one to move them together would be good. One could also adjust the movement speed of the base such that they finish simultaneously.
+- [2] **"Failed" execution**: Even though the manipulator's movement finishes, the execution somehow fails. This should be avoided to distinguish real failures from normal executions.
 
 ### Ideas:
-- [ ] **Robot-Independance**: Currently, the `rviz_con` package only allows for this specific combination of mobile manipulators, but it would be intersting to allow dynamic combinations, as it would open the door of combined planning for all mobile manipulators.
-- [ ] **True combined motion planning**: Currently, the failure of one motion thread does not affect the other. We can implement that the threads send each other interrupt signals to commincate their needs.
-- [ ] **Visualize planning goal**: You could visualize the planning goal / the joint positions of the manipulator in the rviz instance of `rviz_con`.
+- [ ] **Robot-Independence**: Currently, the `rviz_con` package only allows for this specific combination of mobile manipulators, but it would be interesting to allow dynamic combinations, as it would open the door to combined planning for all mobile manipulators.
+- [ ] **True combined motion planning**: Currently, the failure of one motion thread does not affect the other. We can implement a system where threads send each other interrupt signals to communicate their needs.
+- [ ] **Visualize planning goal**: You could visualize the planning goal / the joint positions of the manipulator in the RViz instance of `rviz_con`.
 - [ ] **ROS topic as an API**: Implementing a ROS topic for communicating the goal between programs would be great, as currently `rviz_con` only allows goal specifications via user input.
 
