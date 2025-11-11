@@ -40,7 +40,7 @@ Then, on RViz, select `Panels` -> `CombinedControlPanel`.
 If you started manually, you can save the state of the RViz instance to be launched by the launch file by selecting `File` -> `Save Config As` and then saving it to: `rviz_con/config/rviz_con.rviz`
 
 ## TODOs
-Here, I listed some issues/ideas remaining to be solved / implemented.
+Here, we have listed some issues/ideas that remain to be solved / implemented.
 
 ### Issues:
 - [1] **Moving at the same time**: Currently, the "Publish All" button starts the base and manipulator planning in two separate threads. But as the base is a lot faster in planning, it just starts to move before the manipulator moves. Joining the threads to one to move them together would be good. One could also adjust the movement speed of the base such that they finish simultaneously.
