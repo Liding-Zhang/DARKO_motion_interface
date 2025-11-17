@@ -43,7 +43,7 @@ If you started manually, you can save the state of the RViz instance to be launc
 Here, we have listed some issues/ideas that remain to be solved/implemented.
 
 ### Issues:
-- [1] **Moving at the same time**: Currently, the "Publish All" button starts the base and manipulator planning in two separate threads. But as the base is a lot faster in planning, it just starts to move before the manipulator moves. Joining the threads to one to move them together would be good. One could also adjust the movement speed of the base such that they finish simultaneously.
+- [1] **Moving at the same time**: Currently, the "Publish All" button starts the base and manipulator planning in two separate threads. However, as the base is much faster in planning, it starts to move before the manipulator does. Joining the threads to one to move them together would be good. One could also adjust the movement speed of the base such that they finish simultaneously.
 - [2] **"Failed" execution**: Even though the manipulator's movement finishes, the execution somehow fails. This should be avoided to distinguish real failures from normal executions.
 
 ### Ideas:
