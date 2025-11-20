@@ -36,7 +36,7 @@ If the `roslaunch` command above did not work somehow, you can start the Panel m
 ```
 rosrun rviz rviz
 ```
-Then, on RViz, select `Panels` -> `CombinedControlPanel`.
+Then, on RViz window, select `Panels` -> `CombinedControlPanel`.
 If you started manually, you can save the state of the RViz instance to be launched by the launch file by selecting `File` -> `Save Config As` and then saving it to: `rviz_con/config/rviz_con.rviz`
 
 ## TODOs
